@@ -20,5 +20,4 @@ def fizz_buzz_recursion(target,ans)
     end
 end
 
-result = fizz_buzz_recursion(16, "")
-puts result
+# puts fizz_buzz_recursion(16, "")

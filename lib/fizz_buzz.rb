@@ -1,22 +1,22 @@
 def fizz_buzz(target)
     if target % 15 == 0
-        'Fizz Buzz!'
+        return 'Fizz Buzz!'
     elsif target % 5 == 0
-        'Buzz!'
+        return 'Buzz!'
     elsif target % 3 == 0
-        'Fizz!'
+        return 'Fizz!'
     else
-        target.to_s
+        return target.to_s
     end
 end
 
 def fizz_buzz_recursion(target,ans)
     if target <= 0
-        ans
+        return ans
     else
         ans += " " + fizz_buzz(target)
         target -= 1
-        fizz_buzz_recursion(target, ans)
+        return fizz_buzz_recursion(target, ans)
     end
 end
 
